@@ -1,4 +1,4 @@
 magento
 =======
 
-Just messing about with Magento; nothing exciting here.
+Just messing about with Magento CE; nothing exciting here.
