@@ -1,0 +1,10 @@
+.modgit/
+downloader/
+errors/
+includes/
+nbproject/
+pear
+pear/
+php.ini.sample
+pkginfo/
+var/
