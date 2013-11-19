@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<MICROS_Layout>
+			<active>true</active>
+			<codePool>local</codePool>
+		</MICROS_Layout>
+	</modules>
+</config>
+

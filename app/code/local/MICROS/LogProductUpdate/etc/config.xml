@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<modules>
+		<!--
+			This must exactly match the namespace and module's folder
+			names, with directory separators replaced by underscores
+		-->
+		<MICROS_LogProductUpdate>
+			<version>0.0.1</version>
+		</MICROS_LogProductUpdate>
+	</modules>
+	
+	<!-- Configure module to use 'global' scope -->
+	<global>
+	
+		<!-- Define the models to be used -->
+		<models>
+			<micros_logproductupdate>
+				<!-- Path to the models directory, replacing slash with underscores -->
+				<class>MICROS_LogProductUpdate_Model</class>
+			</micros_logproductupdate>
+		</models>
+	
+		<!-- Define an event observer -->
+		<events>
+			<!-- The event code to observe. (see, e.g., http://www.nicksays.co.uk/magento-events-cheat-sheet-1-7/ for a list)   -->
+			<catalog_product_save_after>
+				<!-- Define the observer for the event catalog_product_save_after -->
+				<observers>
+					<!--
+						Unique identifier within the 
+						catalog_product_save_after node.
+						By convention, we write the module's 
+						name in lowercase.
+					-->
+					<micros_logproductupdate>
+						<!-- Need to define: class (model), method to be called and type of class to instantiate -->
+						<class>micros_logproductupdate/observer</class>
+						<method>logUpdate</method>
+						<type>singleton</type>
+					</micros_logproductupdate>
+				</observers>
+			</catalog_product_save_after>
+		</events>
+		
+		
+	
+	</global>
+
+</config>

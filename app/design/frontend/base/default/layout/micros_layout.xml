@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+  <default>
+    <!-- refer to existing 'before_body_end' block so we can add to it -->
+    <reference name="before_body_end">
+      <!-- add a new block, 'micros_layout_footer', to before_body_end and specify the template file.  -->
+      <block type="micros_layout/footer" name="micros_layout_footer" template="micros_layout/footer.phtml" />
+    </reference>
+  </default>
+</layout>
+

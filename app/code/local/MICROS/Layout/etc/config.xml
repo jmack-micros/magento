@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<modules>
+		<MICROS_Layout>
+			<version>0.0.1</version>
+		</MICROS_Layout>
+	</modules>
+	
+	<!-- scope -->
+	<global>
+		<!-- new block definition -->
+		<blocks>
+			<!-- unique name for the block files -->
+			<micros_layout>
+				<class>MICROS_Layout_Block</class>
+			</micros_layout>
+		</blocks>
+	</global>
+	
+	<!-- scope -->
+	<frontend>
+		
+		<!-- changes to layout -->
+		<layout>
+		
+			<!-- apparently this is an "update" file -->
+			<updates>
+			
+				<!-- this child node name must be unique throughout Magento -->
+				<micros_layout module="MICROS_Layout">
+					<!-- the name of the layout file we are adding -->
+					<file>micros_layout.xml</file>
+				</micros_layout>
+				
+			</updates>
+		
+		</layout>
+
+	</frontend>
+	
+</config>
+
